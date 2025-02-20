@@ -8,7 +8,7 @@
 ## デモ動画
 [![](https://img.youtube.com/vi/gKtSeKtFF_E/0.jpg)](https://www.youtube.com/watch?v=gKtSeKtFF_E&ab_channel=caffeline)
 
-## 必要条件
+## 依存ライブラリ
 - Python 3.x
 - [numpy](https://numpy.org/)
 - [matplotlib](https://matplotlib.org/)
