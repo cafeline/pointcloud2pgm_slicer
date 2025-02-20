@@ -1,0 +1,7 @@
+pytest
+pytest-qt
+PyQt5
+open3d
+pyvista
+pyvistaqt
+matplotlib

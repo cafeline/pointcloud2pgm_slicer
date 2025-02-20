@@ -1,1 +1,3 @@
-scripts/__pycache__/
+**/__pycache__/
+pointcloud2pgm_slicer/pointcloud2pgm_slicer.egg-info/
+.pytest_cache/
