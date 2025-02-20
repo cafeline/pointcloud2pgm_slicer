@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Ryo Funai
+# SPDX-License-Identifier: Apache-2.0
+
 import sys
 import argparse
 from PyQt5 import QtWidgets, QtCore, QtGui
