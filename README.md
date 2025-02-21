@@ -17,28 +17,33 @@
 - [PyQt5](https://pypi.org/project/PyQt5/)
 - [pyvistaqt](https://pypi.org/project/pyvistaqt/)
 
-## インストール
-必要なライブラリは、以下のコマンドでインストールできます。
+## インストールと実行方法
+このツールは、以下の2通りの方法で実行できます。
+
+### 1. パッケージとしてインストールして実行する方法
+1. 依存関係のインストール
 ```bash
-pip install numpy matplotlib open3d pyvista PyQt5 pyvistaqt
+pip install -r requirements.txt
+```
+2. パッケージのインストール
+```bash
+pip install -e .
+```
+3. 実行
+```bash
+python3 -m pointcloud2pgm_slicer.main <input_file.pcd> <output_directory>
+```
+### 2. 直接実行する方法
+1. 依存関係のインストール
+```bash
+pip install -r requirements.txt
+```
+2. 実行
+```bash
+python3 pointcloud2pgm_slicer/main.py <input_file.pcd> <output_directory>
 ```
 
-
-## 使用方法
-1. **入力データの準備**
-   変換対象の点群データ（.pcd または .ply）と、結果を保存する出力先ディレクトリを用意します。
-
-2. **プログラムの実行**
-   ```bash
-   python3 pointcloud2pgm_slicer/main.py <input_file> <output_dir>
-   ```
-
-   例:
-   ```bash
-   python3 pointcloud2pgm_slicer/main.py data/sample.ply output/
-   ```
-
-3. **GUIの操作**
+## **GUIの操作**
    プログラム起動後、ウィンドウが表示されます。
    - **Min Z / Max Z スライダーおよび数値入力**: 点群データ内のz軸の抽出範囲を設定します。
    - **Reset ボタン**: z軸の設定を全範囲にリセットします。
