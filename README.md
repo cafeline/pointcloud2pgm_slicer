@@ -30,12 +30,12 @@ pip install numpy matplotlib open3d pyvista PyQt5 pyvistaqt
 
 2. **プログラムの実行**
    ```bash
-   python3 scripts/main.py <input_file> <output_dir>
+   python3 pointcloud2pgm_slicer/main.py <input_file> <output_dir>
    ```
 
    例:
    ```bash
-   python3 scripts/main.py data/sample.ply output/
+   python3 pointcloud2pgm_slicer/main.py data/sample.ply output/
    ```
 
 3. **GUIの操作**
@@ -47,7 +47,7 @@ pip install numpy matplotlib open3d pyvista PyQt5 pyvistaqt
    - **Convert to PGM ボタン**: 現在の設定に基づき、点群データをPGM画像およびYAMLファイルに変換して出力します。
 
 ## 設定の変更
-- **設定ファイル:** [scripts/config.py](scripts/config.py)
+- **設定ファイル:** [pointcloud2pgm_slicer/config.py](pointcloud2pgm_slicer/config.py)
 
 - VOXEL_SIZE
   - 描画用の点群のダウンサンプリングに使用するボクセルサイズ
